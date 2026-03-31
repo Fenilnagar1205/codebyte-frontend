@@ -1,4 +1,4 @@
-const BASE = "/api";
+const BASE = import.meta.env.VITE_API_BASE ?? "https://codebyte-backend-4sr6.onrender.com/api";
 
 export const getToken  = () => localStorage.getItem("cb_token");
 export const setToken  = (t) => localStorage.setItem("cb_token", t);
